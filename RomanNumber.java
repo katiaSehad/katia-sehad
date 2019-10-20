@@ -47,7 +47,7 @@ public final class RomanNumber extends Number {
   @Override
   public double doubleValue() {
     this.value =(double)this.value;
-    return 0;
+    return   this.value;
   }
 
   /**
@@ -55,7 +55,7 @@ public final class RomanNumber extends Number {
    */
   @Override
   public float floatValue() {
-    this.value =;
+
     return (float)this.value;
   }
 
@@ -72,8 +72,8 @@ public final class RomanNumber extends Number {
    */
   @Override
   public long longValue() {
-    // TODO
-    return 0;
+    // TO
+    return (long)this.value;
   }
 
   @Override
@@ -100,7 +100,7 @@ public final class RomanNumber extends Number {
         
         if(romanValue.equals(romanValue.toUpperCase()))
         {
-           System.out.println("La chaîne est en majuscules");
+           System.out.println("La chaîne est en majuscule");
         }
         else{
             throw new IllegalArgumentException("value doit etre en majuscule");
@@ -122,7 +122,7 @@ public final class RomanNumber extends Number {
 			}
 		} 
 		return resultat	;
-        trop de repitition de symbole
+ 
 
 
 	}
@@ -132,9 +132,7 @@ public final class RomanNumber extends Number {
 
 	private static String toRoman(int value) {
 	// TODO
-		if nbreinf ou egale 0 thrownewargumetexption ()
-		syp ou eglae
-		4000
+		
 
 		String resultat="";
 		
