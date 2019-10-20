@@ -135,7 +135,7 @@ public final class RomanNumber extends Number {
 	 }
 		if (nb==3)
 		{
-			 throw new IllegalArgumentException("le nombre de rep de ce chiffre ne doit pas etre 3 au plus ");
+			 throw new IllegalArgumentException("le nombre de rep de ce chiffre ne doit pas etre 3 ou plus ");
 		}
 	
         
