@@ -105,7 +105,39 @@ public final class RomanNumber extends Number {
         else{
             throw new IllegalArgumentException("value doit etre en majuscule");
         }
-        
+        //occurence
+	int nb = 0;
+	int indice=0;
+	 for (int i=0; i < romanValue.length(); i++)
+	 {			//"xxxcv" ixcm
+		indice=i;
+		for (int j=0; j < 3; j++)
+	 	{
+			 if (romanValue.charAt(indice+1) == "I")
+			 	nb++;
+		}
+	  	for (int j=0; j < 3; j++)
+	 	{
+			 if (romanValue.charAt(indice+1) == "X")
+			 	nb++;
+		}
+		 for (int j=0; j < 3; j++)
+	 	{
+			 if (romanValue.charAt(indice+1) == "C")
+			 	nb++;
+		}
+		 for (int j=0; j < 3; j++)
+	 	{
+			 if (romanValue.charAt(indice+1) == "M")
+			 	nb++;
+		}
+		 
+	 }
+		if (nb==3)
+		{
+			 throw new IllegalArgumentException("le nombre de rep de ce chiffre ne doit pas etre 3 au plus ");
+		}
+	
         
 		while(itr.hasNext())
 		{
