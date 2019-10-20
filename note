@@ -1,0 +1,28 @@
+TP2.
+
+1/-
+make permet de compiler tout le projet 
+il rassembe tout les compilation existante de  mon projet 
+
+*/en tapant make la premiere fois rien ne se passe car il a deja eté compiler 
+ il execute que 	gcc main.o function.o -o example
+*/en tapant make apres la modification de function.c ca compile
+			gcc -c function.c -o function.o
+			gcc main.o function.o -o example 
+*/ make clean 
+rm -rf *.o example
+efface les executable
+*/en tapant make -f Makefile2 la deuxieme fois 
+car ca a été deja fait 
+ make: Nothing to be done for 'all'
+*/ en changant function.c
+
+compilation de main.c :
+cc -o main.o -c main.c
+linkage :
+cc -o example main.o function.o
+2-3/scons remplace  make et ill 
+SCons -c supprime les fichiers construits appropriés.
+
+
+
